@@ -13,18 +13,16 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var totalSavedView: UIView!
     @IBOutlet weak var detailsView: UIView!
+    @IBOutlet weak var addSavingsBtn: UIButton!
+    @IBOutlet weak var logsBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        totalSavedView.backgroundColor = .white
-        totalSavedView.layer.cornerRadius = 10.0
-        totalSavedView.layer.shadowRadius = 10.0
-        totalSavedView.layer.shadowOpacity = 0.8
+        totalSavedView.universalViewDesign()
+        detailsView.universalViewDesign()
         
-        detailsView.backgroundColor = .white
-        detailsView.layer.cornerRadius = 10.0
-        detailsView.layer.shadowRadius = 10.0
-        detailsView.layer.shadowOpacity = 0.8
+        addSavingsBtn.universalBtnDesign()
+        logsBtn.universalBtnDesign()
     }
 
 
