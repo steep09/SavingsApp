@@ -6,6 +6,8 @@ target 'savingsApp' do
   use_frameworks!
 
   # Pods for savingsApp
-  pod ""
-
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  
 end

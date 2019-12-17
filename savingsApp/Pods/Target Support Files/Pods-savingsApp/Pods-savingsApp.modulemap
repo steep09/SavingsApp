@@ -1,0 +1,6 @@
+framework module Pods_savingsApp {
+  umbrella header "Pods-savingsApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
