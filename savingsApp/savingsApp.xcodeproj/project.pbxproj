@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		700A1A7E87D0A792EDE706F1 /* Pods_savingsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B657A2DAE43288A7E4AFE7 /* Pods_savingsApp.framework */; };
 		A7201B0D239A6C0900ED0881 /* UIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7201B0C239A6C0900ED0881 /* UIViews.swift */; };
+		A747B23123AB784E00CBD0D4 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747B23023AB784E00CBD0D4 /* LogsViewController.swift */; };
 		A75C797F2398C99500AA41A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C797E2398C99500AA41A2 /* AppDelegate.swift */; };
 		A75C79812398C99500AA41A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C79802398C99500AA41A2 /* SceneDelegate.swift */; };
 		A75C79832398C99500AA41A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C79822398C99500AA41A2 /* MainViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		A7201B0C239A6C0900ED0881 /* UIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViews.swift; sourceTree = "<group>"; };
+		A747B23023AB784E00CBD0D4 /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
 		A75C797B2398C99500AA41A2 /* savingsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = savingsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75C797E2398C99500AA41A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A75C79802398C99500AA41A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +56,6 @@
 				CE765F46D812D22FE2638F25 /* Pods-savingsApp.debug.xcconfig */,
 				F59B0EDE79F33436D05ACE67 /* Pods-savingsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -106,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				A75C79822398C99500AA41A2 /* MainViewController.swift */,
+				A747B23023AB784E00CBD0D4 /* LogsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -254,6 +256,7 @@
 				A75C79812398C99500AA41A2 /* SceneDelegate.swift in Sources */,
 				A7201B0D239A6C0900ED0881 /* UIViews.swift in Sources */,
 				A762B137239A68950053ACB4 /* Buttons.swift in Sources */,
+				A747B23123AB784E00CBD0D4 /* LogsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
