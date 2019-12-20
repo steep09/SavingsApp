@@ -9,13 +9,9 @@
 import UIKit
 
 class LogsViewController: UIViewController {
-
-    @IBOutlet weak var views: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        views.universalViewDesign()
     }
 
 }

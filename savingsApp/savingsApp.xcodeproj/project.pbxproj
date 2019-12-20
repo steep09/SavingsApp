@@ -10,6 +10,8 @@
 		700A1A7E87D0A792EDE706F1 /* Pods_savingsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B657A2DAE43288A7E4AFE7 /* Pods_savingsApp.framework */; };
 		A7201B0D239A6C0900ED0881 /* UIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7201B0C239A6C0900ED0881 /* UIViews.swift */; };
 		A747B23123AB784E00CBD0D4 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747B23023AB784E00CBD0D4 /* LogsViewController.swift */; };
+		A756277123ACE2D000ADF5C0 /* MonthlyTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A756277023ACE2D000ADF5C0 /* MonthlyTrackerViewController.swift */; };
+		A756277423ACE63D00ADF5C0 /* ExpensesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A756277323ACE63D00ADF5C0 /* ExpensesTableViewCell.swift */; };
 		A75C797F2398C99500AA41A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C797E2398C99500AA41A2 /* AppDelegate.swift */; };
 		A75C79812398C99500AA41A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C79802398C99500AA41A2 /* SceneDelegate.swift */; };
 		A75C79832398C99500AA41A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75C79822398C99500AA41A2 /* MainViewController.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		A7201B0C239A6C0900ED0881 /* UIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViews.swift; sourceTree = "<group>"; };
 		A747B23023AB784E00CBD0D4 /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
+		A756277023ACE2D000ADF5C0 /* MonthlyTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyTrackerViewController.swift; sourceTree = "<group>"; };
+		A756277323ACE63D00ADF5C0 /* ExpensesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTableViewCell.swift; sourceTree = "<group>"; };
 		A75C797B2398C99500AA41A2 /* savingsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = savingsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75C797E2398C99500AA41A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A75C79802398C99500AA41A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A756277223ACE62200ADF5C0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A756277323ACE63D00ADF5C0 /* ExpensesTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A75C79722398C99500AA41A2 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +120,7 @@
 			children = (
 				A75C79822398C99500AA41A2 /* MainViewController.swift */,
 				A747B23023AB784E00CBD0D4 /* LogsViewController.swift */,
+				A756277023ACE2D000ADF5C0 /* MonthlyTrackerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -115,6 +128,7 @@
 		A75C79932398C9B000AA41A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A756277223ACE62200ADF5C0 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,8 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A75C79832398C99500AA41A2 /* MainViewController.swift in Sources */,
+				A756277123ACE2D000ADF5C0 /* MonthlyTrackerViewController.swift in Sources */,
 				A75C797F2398C99500AA41A2 /* AppDelegate.swift in Sources */,
 				A75C79812398C99500AA41A2 /* SceneDelegate.swift in Sources */,
+				A756277423ACE63D00ADF5C0 /* ExpensesTableViewCell.swift in Sources */,
 				A7201B0D239A6C0900ED0881 /* UIViews.swift in Sources */,
 				A762B137239A68950053ACB4 /* Buttons.swift in Sources */,
 				A747B23123AB784E00CBD0D4 /* LogsViewController.swift in Sources */,
