@@ -113,8 +113,12 @@
                         <barButtonItem key="leftBarButtonItem" image="power" catalog="system" id="Ffk-DS-RDC"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="dateTodayLbl" destination="XLQ-ea-s7x" id="bE0-35-7vE"/>
                         <outlet property="logsBtn" destination="a2K-mM-Pb6" id="3fp-hM-R7k"/>
                         <outlet property="profileView" destination="23P-y0-SIO" id="A6h-k1-YzC"/>
+                        <outlet property="totalSavedLbl" destination="9KN-Dh-s0y" id="uPQ-Sa-znE"/>
+                        <outlet property="userImage" destination="MWP-3g-xnd" id="1Rf-i7-DHl"/>
+                        <outlet property="userName" destination="9jI-97-omw" id="9LL-L5-CG8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -263,19 +267,19 @@
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GQb-pf-6L0">
-                                <rect key="frame" x="0.0" y="307" width="414" height="283"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GQb-pf-6L0">
+                                <rect key="frame" x="0.0" y="307" width="414" height="255"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="283" id="P0V-2h-QRw"/>
+                                    <constraint firstAttribute="height" constant="255" id="P0V-2h-QRw"/>
                                     <constraint firstAttribute="width" constant="414" id="ezU-Db-xvw"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpensesTableViewCell" rowHeight="84" id="L9d-gb-hQK" customClass="ExpensesTableViewCell" customModule="savingsApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="84"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExpensesTableViewCell" rowHeight="90" id="L9d-gb-hQK" customClass="ExpensesTableViewCell" customModule="savingsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L9d-gb-hQK" id="Tzy-ar-gsQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Netflix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Poo-7I-JBS">
@@ -289,7 +293,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₱650.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abt-77-dF0">
-                                                    <rect key="frame" x="260" y="11" width="134" height="62"/>
+                                                    <rect key="frame" x="260" y="11" width="134" height="68"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="62" id="fGv-Pm-6eH"/>
                                                         <constraint firstAttribute="width" constant="134" id="xqn-DB-fVb"/>
@@ -299,7 +303,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 20, 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k16-uE-JDb">
-                                                    <rect key="frame" x="20" y="44" width="232" height="29"/>
+                                                    <rect key="frame" x="20" y="44" width="232" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="192" id="0PU-Z1-IDz"/>
                                                         <constraint firstAttribute="height" constant="29" id="HiD-We-ekT"/>
