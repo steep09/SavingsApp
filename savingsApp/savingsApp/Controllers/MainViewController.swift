@@ -32,6 +32,12 @@ class MainViewController: UIViewController {
         dateTodayLbl.text = dateString
     }
 
-
+    @IBAction func addTotalSavedWasPressed(_ sender: Any) {
+        let alert = UIAlertController(title: "Alert", message: "Sample lang to", preferredStyle: .alert)
+        alert.addTextField(configurationHandler: nil)
+        alert.addAction(UIAlertAction(title: "Click", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
 

@@ -42,7 +42,7 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₱229,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KN-Dh-s0y">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₱245,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KN-Dh-s0y">
                                         <rect key="frame" x="146" y="59" width="220" height="55"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="220" id="Pih-Kz-2D0"/>
@@ -83,13 +83,23 @@
                                 <rect key="frame" x="20" y="305" width="374" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2K-mM-Pb6">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="40"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Logs">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="2Iu-H3-dgA" kind="show" id="sd9-Eh-YJS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRg-4v-txQ">
+                                        <rect key="frame" x="194" y="0.0" width="180" height="40"/>
+                                        <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addTotalSavedWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ncz-gE-3qL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -350,6 +360,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ucr-qh-YEi"/>
                     <connections>
+                        <outlet property="daysLeftLbl" destination="rjB-Ql-KAk" id="raS-Im-A6r"/>
                         <outlet property="tableView" destination="GQb-pf-6L0" id="BBs-Sl-MT0"/>
                         <outlet property="views" destination="oCc-fj-YdY" id="8u2-Cs-UaX"/>
                     </connections>

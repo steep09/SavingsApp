@@ -13,14 +13,41 @@ class MonthlyTrackerViewController: UIViewController {
     @IBOutlet weak var views: UIView!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var daysLeftLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         views.universalViewDesign()
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        daysLeftLbl.text = checkForMonth()
+        
+    }
 
+}
+
+extension MonthlyTrackerViewController {
+    
+    func checkForMonth() -> String {
+        let date = Date()
+        let df = DateFormatter()
+        df.dateFormat = "MMMM dd, yyyy"
+        
+        let calendar = Calendar.current
+        
+        if calendar.component(.month, from: date)%2 == 0 {
+            return String(31 - calendar.component(.day, from: date))
+        } else {
+            return String(30 - calendar.component(.day, from: date))
+        }
+    }
+    
 }
 
 extension MonthlyTrackerViewController: UITableViewDelegate, UITableViewDataSource {
