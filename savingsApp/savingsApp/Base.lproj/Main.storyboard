@@ -123,6 +123,7 @@
                         <barButtonItem key="leftBarButtonItem" image="power" catalog="system" id="Ffk-DS-RDC"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="addBtn" destination="mRg-4v-txQ" id="hqr-ih-wcc"/>
                         <outlet property="dateTodayLbl" destination="XLQ-ea-s7x" id="bE0-35-7vE"/>
                         <outlet property="logsBtn" destination="a2K-mM-Pb6" id="3fp-hM-R7k"/>
                         <outlet property="profileView" destination="23P-y0-SIO" id="A6h-k1-YzC"/>
