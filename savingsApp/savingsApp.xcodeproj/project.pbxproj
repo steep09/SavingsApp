@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		700A1A7E87D0A792EDE706F1 /* Pods_savingsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8B657A2DAE43288A7E4AFE7 /* Pods_savingsApp.framework */; };
 		A7201B0D239A6C0900ED0881 /* UIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7201B0C239A6C0900ED0881 /* UIViews.swift */; };
+		A7321F3223C59B07006920D9 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7321F3123C59B07006920D9 /* SignupViewController.swift */; };
 		A747B23123AB784E00CBD0D4 /* LogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A747B23023AB784E00CBD0D4 /* LogsViewController.swift */; };
 		A753F1FA23ADE446004FF578 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753F1F923ADE446004FF578 /* Expense.swift */; };
 		A756277123ACE2D000ADF5C0 /* MonthlyTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A756277023ACE2D000ADF5C0 /* MonthlyTrackerViewController.swift */; };
@@ -21,10 +22,12 @@
 		A75C798B2398C99700AA41A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75C79892398C99700AA41A2 /* LaunchScreen.storyboard */; };
 		A762B137239A68950053ACB4 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762B136239A68950053ACB4 /* Buttons.swift */; };
 		A785764E23A8539F007C5BA0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A785764D23A8539F007C5BA0 /* GoogleService-Info.plist */; };
+		A7C73C8423BF32C400D71C37 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C73C8323BF32C400D71C37 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A7201B0C239A6C0900ED0881 /* UIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViews.swift; sourceTree = "<group>"; };
+		A7321F3123C59B07006920D9 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A747B23023AB784E00CBD0D4 /* LogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsViewController.swift; sourceTree = "<group>"; };
 		A753F1F923ADE446004FF578 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		A756277023ACE2D000ADF5C0 /* MonthlyTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyTrackerViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +42,7 @@
 		A75C798C2398C99700AA41A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A762B136239A68950053ACB4 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		A785764D23A8539F007C5BA0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7C73C8323BF32C400D71C37 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B8B657A2DAE43288A7E4AFE7 /* Pods_savingsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_savingsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE765F46D812D22FE2638F25 /* Pods-savingsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-savingsApp.debug.xcconfig"; path = "Target Support Files/Pods-savingsApp/Pods-savingsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F59B0EDE79F33436D05ACE67 /* Pods-savingsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-savingsApp.release.xcconfig"; path = "Target Support Files/Pods-savingsApp/Pods-savingsApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				A75C79822398C99500AA41A2 /* MainViewController.swift */,
 				A747B23023AB784E00CBD0D4 /* LogsViewController.swift */,
 				A756277023ACE2D000ADF5C0 /* MonthlyTrackerViewController.swift */,
+				A7C73C8323BF32C400D71C37 /* WelcomeViewController.swift */,
+				A7321F3123C59B07006920D9 /* SignupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -269,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A75C79832398C99500AA41A2 /* MainViewController.swift in Sources */,
+				A7C73C8423BF32C400D71C37 /* WelcomeViewController.swift in Sources */,
+				A7321F3223C59B07006920D9 /* SignupViewController.swift in Sources */,
 				A756277123ACE2D000ADF5C0 /* MonthlyTrackerViewController.swift in Sources */,
 				A75C797F2398C99500AA41A2 /* AppDelegate.swift in Sources */,
 				A75C79812398C99500AA41A2 /* SceneDelegate.swift in Sources */,

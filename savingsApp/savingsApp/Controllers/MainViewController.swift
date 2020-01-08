@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var totalSavedLbl: UILabel!
     @IBOutlet weak var dateTodayLbl: UILabel!
     
-    var totalSaved: NSNumber = 245000.00
+    var totalSaved: NSNumber = 300000.00
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +45,12 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        if Auth.auth().currentUser != nil {
+            let welcomeVC = self.storyboard?.instantiateViewController(identifier: "WelcomeViewController") as! WelcomeViewController
+            welcomeVC.modalPresentationStyle = .fullScreen
+            self.present(welcomeVC, animated: false, completion: nil)
+        }
+        
         let date = Date()
         let df = DateFormatter()
         df.dateFormat = "MMMM dd, yyyy"
@@ -61,9 +67,9 @@ extension MainViewController {
         alert.addTextField(configurationHandler: nil)
         alert.addAction(UIAlertAction(title: "-", style: .default, handler: { [weak alert] (_) in
             
-            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+            let textField = alert?.textFields?[0] // Force unwrapping because we know it exists.
             let gotNumber = Double(self.totalSaved)
-            let newNumber = Int(textField!.text!)
+            let newNumber = Int(textField?.text ?? "0")
             let totalNumber = Double(gotNumber) - Double(newNumber!)
             self.totalSaved = NSNumber(value: totalNumber)
             
@@ -81,10 +87,10 @@ extension MainViewController {
         }))
         alert.addAction(UIAlertAction(title: "+", style: .default, handler: { [weak alert] (_) in
             
-            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+            let textField = alert?.textFields?[0] // Force unwrapping because we know it exists.
             let gotNumber = Double(self.totalSaved)
-            let newNumber = Int(textField!.text!)
-            let totalNumber = Double(gotNumber) + Double(newNumber!)
+            let newNumber = Int(textField?.text ?? "0")
+            let totalNumber = Double(gotNumber) - Double(newNumber!)
             self.totalSaved = NSNumber(value: totalNumber)
             
             let currencyFormatter = NumberFormatter()
